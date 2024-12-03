@@ -1,10 +1,6 @@
-use std::env;
 use std::error::Error;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
-use std::ops::Mul;
-use std::path::Path;
-use itertools::Itertools;
 
 fn orientation(numbers: &Vec<i32>) -> Result<bool, Box<dyn Error>> {
     let mut iter = numbers.iter();
